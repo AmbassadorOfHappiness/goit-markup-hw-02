@@ -1,0 +1,88 @@
+/* цвет параграфов color: #757575; */
+/* цвет заголовков color: #212121; */
+/* цвет текста шапки color: #FFFFFF; */
+/* цвет контактов футера color: rgba(255, 255, 255, 0.6); */
+/* цвет фона-1 background: #2F303A; */
+/* цвет фона-2 background: #F5F4FA; */
+/* акцент color: #2196F3; */
+
+:root {
+  --contact-text-color: #757575;
+  --header-text-color: #212121;
+  --white-text-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --first-background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+  --accent-color: #2196f3;
+}
+
+/*
+body {
+  color: #212121;
+  background: #ffffff;
+}
+*/
+/* logo */
+.logo {
+  color: var(--header-text-color);
+}
+/* site-nav */
+
+.site-nav .link {
+  color: var(--header-text-color);
+}
+.site-nav .link.current {
+  color: #2196f3;
+}
+/* contacts list */
+
+.contacts .link {
+  color: var(--contact-text-color);
+}
+
+/* hero */
+.hero {
+  background: var(--first-background-color);
+}
+.hero .title {
+  color: var(--white-text-color);
+}
+.button {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+.button .primary {
+}
+/* section advantages */
+/*.advantages > .section-title {
+    color: ;
+}
+*/
+
+/* p color */
+p {
+  color: var(--contact-text-color);
+}
+
+/* section team */
+.team {
+  background: var(--second-background-color);
+}
+
+/* footer */
+.footer {
+  background: var(--first-background-color);
+}
+
+.map {
+  color: var(--white-text-color);
+}
+
+.footer-contacts .link {
+  color: var(--footer-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}

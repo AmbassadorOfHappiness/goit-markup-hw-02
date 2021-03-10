@@ -4,33 +4,34 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document_Shevchuk</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
  <body>
    <!-- Шапка страницы -->
     <header>
       <nav>
-        <a href="index.html">WebStudio</a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+        <a href="index.html" class="logo link">WebStudio</a>
+        <ul class="site-nav list">
+          <li><a href="" class="link current">Студия</a></li>
+          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+          <li><a href="" class="link">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="contacts list">
+        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
-      <section>
-       <h1>Эффективные решения для вашего бизнеса</h1>
-       <button>Заказать услугу</button>
+      <section class="hero">
+       <h1 class="title">Эффективные решения для вашего бизнеса</h1>
+       <a href="" class="button">Заказать услугу</a>
       </section>
 
-      <section> 
+      <section class="section advantages"> 
         <!-- "это секция и подразумеваеться что у нее есть оглавление (h2)..." © Репета -->
-        <ul>
+        <ul class="section-title">
           <li>
             <h3>Внимание к деталям</h3>
             <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -50,11 +51,10 @@
         </ul>
       </section>
 
-      <section> 
-        <h2>Чем мы занимаемся</h2>
+      <section class="section description"> 
+        <h2 class="title">Чем мы занимаемся</h2>
         <ul>
           <li>
-            <!-- скопировал alt как описано в Figma  -->
             <img src="./images/box_1.jpg" 
             alt="close-up-image-programer-working-his-desk-office"
             width="370"/>
@@ -72,33 +72,32 @@
         </ul>
       </section>
 
-      <section>
-       <h2>Наша команда</h2>
-        <!-- слишком много h -->
+      <section class="section team">
+       <h2 class="title">Наша команда</h2>
         <ul>
           <li>
-            <img src="./images/our_team/Игорь_Демьяненко.jpg"
+            <img src="./images/our_team/img1.jpg"
              alt="Игорь_Демьяненко.мужчинка_с_бородой_в_красной_рубашке.на_уровне_глаз_очки.улыбается.зубы_ровные"
              width="270"/>
-            <h3>Игорь Демьяненко</h3>
+            <h3 class="profile">Игорь Демьяненко</h3>
             <p lang="en">Product Designer</p>
           </li>
           <li>
-            <img src="./images/our_team/Ольга_Репина.jpg"
+            <img src="./images/our_team/img2.jpg"
              alt="Ольга_Репина.девушка_в_черном_пиджаке_банально_сложила_руки_накрест.светлые_волосы.на_уровне_глаз_очки"
              width="270"/>
             <h3>Ольга Репина</h3>
             <p lang="en">Frontend Developer</p>
           </li>
           <li>
-            <img src="./images/our_team/Николай_Тарасов.jpg"
+            <img src="./images/our_team/img3.jpg"
              alt="Николай_Тарасов.мужчинка_с_бородой_в_белой_рубашке.банально_сложил_руки_накрест.в_отличии_от_коллег_зрение_у_него_хорошее_и_очки_не_носит.улыбается.смотрит_в_правую_сторону"
              width="270"/>
             <h3>Николай Тарасов</h3>
             <p lang="en">Marketing</p>
           </li>
           <li>
-            <img src="./images/our_team/Михаил_Ермаков.jpg"
+            <img src="./images/our_team/img4.jpg"
              alt="Михаил_Ермаков.мужчинка_с_бородой_в_черной_рубашке.на_уровне_глаз_очки.улыбается,взглядом_пытается_закадрить"
              width="270"/>
             <h3>Михаил Ермаков</h3>
@@ -108,16 +107,17 @@
       </section>
     </main>
     <!-- Подвал страницы -->
-    <footer>
-      <a href="index.html">WebStudio</a>
-      <address>
+    <footer class="footer">
+      <ul>
+        <li><a href="index.html" class="logo link">WebStudio</a></li>
+        <li><a href="https://goo.gl/maps/qiwCzoGyX6iBoxW58" target="_blank" class="link map">г. Киев, пр-т Леси Украинки, 26</a></li>
+      </ul>  
+      <address class="footer-contacts list">
         <ul>
-          <li><a href="https://goo.gl/maps/qiwCzoGyX6iBoxW58"target="_blank">г. Киев, пр-т Леси Украинки, 26</a></li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
-        <!-- немного выделуюсь -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.7794508425063!2d30.53619711531519!3d50.42658067947206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1614787607652!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.7794508425063!2d30.53619711531519!3d50.42658067947206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1614787607652!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
       </address>
     </footer>
  </body>
