@@ -14,15 +14,16 @@
   --dark-background-color: #2f303a;
   --grey-background-color: #f5f4fa;
   --accent-color: #2196f3;
+  --logo-color: #000000;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  
+
   color: var(--header-text-color);
-  background: var(--white-text-color);
+  /*background: var(--white-text-color)*/
 }
 address {
   font-style: normal;
@@ -32,7 +33,6 @@ address {
   /* убрали подчеркивание*/
   text-decoration: none;
   color: inherit;
-  cursor: default;
 }
 
 .link:hover,
@@ -55,23 +55,29 @@ address {
   cursor: pointer;
   display: inline-block;
 }
-
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
 .page-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--white-text-color);
 }
-.text {
+.benefits-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--main-text-color);
@@ -83,23 +89,45 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-/*--НУЖНО СОКРАЩАТЬ "team-item","team-item" В team??? */
+/*
+.features {
+}
+.benefits {
+}
+*/
 .team {
   background-color: var(--grey-background-color);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 .team-item {
   text-align: center;
 }
-.С{
+.team-member {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+}
+.team-member-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--main-text-color);
 }
 .dark-bg {
   background-color: var(--dark-background-color);
   color: var(--white-text-color);
 }
-.footer-contacts {
-color: var(--footer-text-color);
+.contacts {
+  color: var(--main-text-color);
+}
+.address {
+  color: var(--footer-text-color);
 }
 .logo {
   font-family: "Raleway";
@@ -107,26 +135,33 @@ color: var(--footer-text-color);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196F3;
+  color: #2196f3;
 }
-.filter {  
+.header-logo {
+  color: var(--logo-color);
+}
+.footer-logo {
+  color: var(--white-text-color);
+}
+.filter {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 .filter:hover,
 .filter:focus {
- background-color: var(--accent-color);
- color: var(--white-text-color);
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
 }
-.project {
+.title-card {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.type {
+.text-card {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
